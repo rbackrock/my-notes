@@ -1,0 +1,90 @@
+:root {
+  --font-family-base: 'Chinese Quotes', "PingFang SC", Helvetica, "Microsoft Yahei", ui-sans-serif,
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-family-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco,
+    Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+:root {
+  --layout-zindex: 1;
+  --layout-mask-zindex: 3;
+  --layout-sidebar-zindex: 9;
+  --body-container-zindex: -6;
+}
+
+/* text */
+:root {
+  --text-1: rgba(100, 86, 71, 1);
+  --text-3: rgba(100, 86, 71, 0.8);
+  --sidebar-date-text: #b9a691;
+  --sidebar-title-text: #635753;
+}
+
+/* background color */
+:root {
+  --bg: #faf7ee;
+  --content-bg: #FFFCF7;
+  --backdrop-bg-color: rgba(0, 0, 0, 0.6);
+  --sidebar-bg: #fbf7ed;
+}
+
+/* 滚动条 */
+:root {
+  --scrollbar-bg: #b9a691;
+  --scrollbar-color: rgba(100, 86, 71, 1);
+  --scrollbar-border-radius: 9px;
+}
+
+/* header */
+:root {
+  --header-height: 5vh;
+  --header-line-height: 3vh;
+  --header-height-mobile: 5vh;
+  --header-line-height-mobile: 3vh;
+  --header-title-fontsize: 1.2em;
+  --header-title-fontsize-mobile: 1em;
+  --header-buttons-fontsize: 0.9em;
+  --header-buttons-fontsize-mobile: 0.7em;
+}
+
+/* mardown 内容 */
+:root {
+  --md-text-height: 36px;
+  --md-text-height-mobile: 33px;
+  --header-anchor-symbol: '#';
+}
+
+/* sidebar */
+:root {
+  --sidebar-width: 16vw;
+  --sidebar-width-mobile: 76vw;
+  --sidebar-border-color: #dcd6ca;
+  --sidebar-item-active-bg: #f1ece1;
+}
+
+/* aside */
+:root {
+  --aside-width: 260px;
+  --aside-width-mobile: 390px;
+}
+
+/* content wrapper */
+:root {
+  --content-wrapper-padding-left: 36px;
+  --content-wrapper-padding-right: 18px;
+  --content-wrapper-padding-left-mobile: 23px;
+  --content-wrapper-padding-right-mobile: 23px;
+}
+
+/* sn */
+:root {
+  --icon-copy: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='20' width='20' stroke='rgba(128,128,128,1)' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2'/%3E%3C/svg%3E");
+  --icon-copied: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='20' width='20' stroke='rgba(128,128,128,1)' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9 2 2 4-4'/%3E%3C/svg%3E");
+}
+
+:root {
+  /* code block */
+  --md-code-lineheight: 27.2px;
+}
