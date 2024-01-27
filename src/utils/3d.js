@@ -7,10 +7,10 @@ export const resourceType = {
   TEXTURE: 'texture_type'
 }
 
-export function getSizes(containerEl) {
+export function getSizes(canvasEl) {
   return {
-    width: containerEl.offsetWidth,
-    height: containerEl.offsetHeight,
+    width: canvasEl.parentElement.offsetWidth,
+    height: canvasEl.parentElement.offsetHeight,
     pixelRatio: Math.min(window.devicePixelRatio, 2)
   }
 }

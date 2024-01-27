@@ -1,7 +1,11 @@
 import { defineConfig } from 'vitepress'
+import glsl from 'vite-plugin-glsl'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    plugins: [glsl()]
+  },
   lang: 'zh-CN',
   title: 'My Awesome Project',
   description: 'A VitePress Site',
