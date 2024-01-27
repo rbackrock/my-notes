@@ -18,6 +18,7 @@ import firefliesFragmentShader from './shaders/fireflies/fragment.glsl'
 
 export default function useScene() {
   const cavansRef = ref(null)
+  const loading = ref(false)
   let onResizeHandleFn = null
   let renderer = null
   let scene = null
@@ -66,6 +67,7 @@ export default function useScene() {
   }
 
   onMounted(() => {
+    loading.value = true
     loadResource({
       gltfFile: {
         type: resourceType.GLTF,
@@ -224,6 +226,11 @@ export default function useScene() {
 
       onResizeHandleFn = onResizeHandle.bind(null, renderer, camera, firefliesMaterial)
       window.addEventListener('resize', onResizeHandleFn)
+    }).finally(() => {
+      const timer = window.setTimeout(() => {
+        loading.value = false
+        window.clearTimeout(timer)
+      }, 1* 1600)
     })
   })
 
@@ -257,6 +264,7 @@ export default function useScene() {
   })
 
   return {
-    cavansRef
+    cavansRef,
+    loading
   }
 }

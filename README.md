@@ -1,1 +1,1 @@
-我的笔记本网站 `vitepress` 创建，使用我自己的仿锤子便签的自定义主题
+我的笔记本网站，使用 `vitepress` 创建，使用的主题是自己写的仿锤子便签风格自定义主题，项目点[这里](https://github.com/rbackrock/smartisan-notes-like-vitepress-theme)访问

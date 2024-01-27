@@ -20,6 +20,8 @@ const {
             <br>
             <p>喜欢计算机，愿望之一是可以撸代码撸到老</p>
             <br>
+            <p>点击<a href="https://github.com/rbackrock" target="_blank" class="a__wrapper">这里</a>可以访问我的 Github</p>
+            <br>
             <p>感谢你的访问</p>
           </div>
         </div>
@@ -47,9 +49,9 @@ const {
         
         .tips__container__wrapper {
           color: #645647;
-          background: #fffcf6;
+          background: #fff;
           border-top: 1px solid #fffcf6;
-          border-radius: 4px;
+          border-radius: 0px;
           box-shadow: 0 3px 8px rgba(69,18,10,.4);
 
           .note__border {
@@ -90,6 +92,11 @@ const {
               position: relative;
               border: 2px solid #e9e5d9;
               padding: 30px 60px 30px 60px;
+
+              .a__wrapper{
+                padding: 0 2px;
+                text-underline-offset: 4px;
+              }
             }
           }
 
@@ -122,9 +129,9 @@ const {
         
         .tips__container__wrapper {
           color: #645647;
-          background: #fffcf6;
+          background: #fff;
           border-top: 1px solid #fffcf6;
-          border-radius: 4px;
+          border-radius: 0;
           box-shadow: 0 3px 8px rgba(69,18,10,.4);
 
           .note__border {
@@ -165,6 +172,11 @@ const {
               position: relative;
               border: 2px solid #e9e5d9;
               padding: 30px 35px 30px 35px;
+
+              .a__wrapper{
+                padding: 0 2px;
+                text-underline-offset: 4px;
+              }
             }
           }
 

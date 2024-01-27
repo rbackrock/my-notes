@@ -7,8 +7,8 @@ export default defineConfig({
     plugins: [glsl()]
   },
   lang: 'zh-CN',
-  title: 'My Awesome Project',
-  description: 'A VitePress Site',
+  title: 'rbackly的记事本',
+  description: 'rbackly的记事本',
   srcDir: './src',
   outDir: './dist',
   head: [
@@ -33,16 +33,59 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        category: '示例',
+        category: '前端',
         items: [
           {
-            title: 'Markdown 示例',
-            link: '/posts/example'
+            title: 'JavaScript 小技巧',
+            link: '/posts/frontend/javascript-skills'
+          },
+          {
+            title: '节流和防抖',
+            link: '/posts/frontend/throttle-and-debounce'
+          },
+          {
+            title: '关于上传',
+            link: '/posts/frontend/upload-about'
+          },
+        ]
+      },
+      {
+        category: '开发备忘',
+        items: [
+          {
+            title: '自己搭建内网穿透服务器',
+            link: '/posts/dev-memo/build-behind-nat-firewall-local-server'
           }
         ]
       },
       {
-        category: '3D练习',
+        category: 'Web3d',
+        items: [
+          {
+            title: 'Blender 相关',
+            link: '/posts/web3d/blender-about'
+          },
+          {
+            title: 'Threejs 相关',
+            link: '/posts/web3d/threejs-about'
+          },
+          {
+            title: 'WebGL 着色器相关',
+            link: '/posts/web3d/webgl-shader'
+          }
+        ]
+      },
+      {
+        category: '其他',
+        items: [
+          {
+            title: '样式 Markdown 示例',
+            link: '/posts/other/example'
+          }
+        ]
+      },
+      {
+        category: '3D相关练习实验',
         items: [
           {
             title: '小场景#1',

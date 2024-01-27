@@ -1,9 +1,22 @@
 <script setup>
 import {
+  watch
+} from 'vue'
+import {
+  useRoute
+} from 'vitepress'
+import {
   useCalcFixContentElementHeight
 } from '../../composables/content'
 
 useCalcFixContentElementHeight()
+const route = useRoute()
+
+watch(route, () => {
+  const contentEl = document.getElementById('content__container__hook')
+  contentEl.scrollTo({ top: 0})
+})
+
 </script>
 
 <template>

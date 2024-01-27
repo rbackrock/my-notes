@@ -1,9 +1,11 @@
 <script setup>
 import CanvasWrapper from '../../CanvasWrapper/index.vue'
+import Loading from '../../CanvasLoading/index.vue'
 import useScene from './scene'
 
 const {
-  cavansRef
+  cavansRef,
+  loading
 } = useScene()
 </script>
 
@@ -11,6 +13,7 @@ const {
   <CanvasWrapper>
     <div class="webgl__wrapper">
       <canvas ref="cavansRef" class="webgl" />
+      <Loading :loading="loading" />
     </div>
   </CanvasWrapper>
 </template>
