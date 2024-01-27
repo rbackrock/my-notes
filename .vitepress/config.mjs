@@ -10,7 +10,7 @@ export default defineConfig({
   title: 'My Awesome Project',
   description: 'A VitePress Site',
   srcDir: './src',
-  outDir: '../dist',
+  outDir: './dist',
   head: [
     [
       'link',
