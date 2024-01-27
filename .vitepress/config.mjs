@@ -7,8 +7,8 @@ export default defineConfig({
     plugins: [glsl()]
   },
   lang: 'zh-CN',
-  title: 'rbackly的记事本',
-  description: 'rbackly的记事本',
+  title: 'rbackly的笔记本',
+  description: 'rbackly的笔记本',
   srcDir: './src',
   outDir: './dist',
   head: [
