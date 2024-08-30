@@ -7,8 +7,8 @@ export default defineConfig({
     plugins: [glsl()]
   },
   lang: 'zh-CN',
-  title: 'rbackly的笔记本',
-  description: 'rbackly的笔记本',
+  title: 'rbackly 的笔记本',
+  description: 'rbackly 的笔记本',
   srcDir: './src',
   outDir: './dist',
   head: [
@@ -26,7 +26,7 @@ export default defineConfig({
   },
   themeConfig: {
     who: 'rbackly',
-    notFoundMessage: 'Balls, 发生404错误了',
+    notFoundMessage: 'Balls，找不到页面了',
     icp: '滇ICP备18008965号-1',
     nav: [
       { text: '首页', link: '/' }
@@ -46,6 +46,10 @@ export default defineConfig({
           {
             title: '关于上传',
             link: '/posts/frontend/upload-about'
+          },
+          {
+            title: 'CSS 布局',
+            link: '/posts/frontend/css-layout'
           },
         ]
       },
@@ -79,13 +83,13 @@ export default defineConfig({
         category: '其他',
         items: [
           {
-            title: '样式 Markdown 示例',
+            title: 'Markdown 示例',
             link: '/posts/other/example'
           }
         ]
       },
       {
-        category: '3D相关练习实验',
+        category: '3D 相关练习和实验',
         items: [
           {
             title: '小场景#1',
