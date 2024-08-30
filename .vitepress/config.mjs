@@ -47,10 +47,10 @@ export default defineConfig({
             title: '关于上传',
             link: '/posts/frontend/upload-about'
           },
-          {
-            title: 'CSS 布局',
-            link: '/posts/frontend/css-layout'
-          },
+          // {
+          //   title: 'CSS 布局',
+          //   link: '/posts/frontend/css-layout'
+          // },
         ]
       },
       {
@@ -83,15 +83,15 @@ export default defineConfig({
           }
         ]
       },
-      {
-        category: '其他',
-        items: [
-          {
-            title: 'Markdown 示例',
-            link: '/posts/other/example'
-          }
-        ]
-      },
+      // {
+      //   category: '其他',
+      //   items: [
+      //     {
+      //       title: 'Markdown 示例',
+      //       link: '/posts/other/example'
+      //     }
+      //   ]
+      // },
       {
         category: '3D 相关练习和实验',
         items: [
