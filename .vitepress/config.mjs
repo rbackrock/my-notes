@@ -59,6 +59,10 @@ export default defineConfig({
           {
             title: '自己搭建内网穿透服务器',
             link: '/posts/dev-memo/build-behind-nat-firewall-local-server'
+          },
+          {
+            title: '申请和配置免费 HTTPS',
+            link: '/posts/dev-memo/tls-certificate'
           }
         ]
       },
