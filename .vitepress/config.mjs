@@ -93,6 +93,27 @@ export default defineConfig({
       //   ]
       // },
       {
+        category: 'C++基础语法',
+        items: [
+          {
+            title: 'basics',
+            link: '/posts/cpp/basics'
+          },
+          {
+            title: 'function',
+            link: '/posts/cpp/function'
+          },
+          {
+            title: 'pointer',
+            link: '/posts/cpp/pointer'
+          },
+          {
+            title: 'struct',
+            link: '/posts/cpp/struct'
+          },
+        ]
+      },
+      {
         category: '3D 相关练习和实验',
         items: [
           {
