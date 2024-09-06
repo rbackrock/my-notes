@@ -1,7 +1,3 @@
----
----
-
-```C++
 #include <iostream>
 #include <format>
 
@@ -25,10 +21,18 @@ int main() {
 
   int val { 3 };
   cout << format("val的原始值为{}", val) << endl; // 3
+  // 一旦初始化引用变量，就不能再指定其他变量
   int& val_copy = val;
+  // 引用变量在使用时会自动解引用
   val_copy = 9;
   cout << format("val的引用变量val_copy引用会改变val，结果为{}", val) << endl; // 9
 
+  // 左值：具有名称，非常数可修改
+  // 右值：非左值的内容，可明确复制给左值的内容
+  int i { 3 };
+  float n { 3.33f };
+  // 引用变量必须参考左值类型数据
+  int& i_ref = i;
+
   return 0;
 }
-```

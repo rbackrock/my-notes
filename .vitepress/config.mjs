@@ -97,19 +97,23 @@ export default defineConfig({
         items: [
           {
             title: 'basics',
-            link: '/posts/cpp/basics'
+            link: '/posts/cpp-basic-syntax/basics'
           },
           {
             title: 'function',
-            link: '/posts/cpp/function'
+            link: '/posts/cpp-basic-syntax/function'
           },
           {
             title: 'pointer',
-            link: '/posts/cpp/pointer'
+            link: '/posts/cpp-basic-syntax/pointer'
           },
           {
             title: 'struct',
-            link: '/posts/cpp/struct'
+            link: '/posts/cpp-basic-syntax/struct'
+          },
+          {
+            title: 'classes',
+            link: '/posts/cpp-basic-syntax/classes'
           },
         ]
       },

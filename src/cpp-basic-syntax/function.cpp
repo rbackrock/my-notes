@@ -1,7 +1,3 @@
----
----
-
-``` C++
 #include <iostream>
 #include <format>
 
@@ -59,6 +55,10 @@ int* fn4(int size) {
   return p;
 }
 
+int fn5(int& i) {
+  return i * 3;
+}
+
 int main() {
   fn1(3);
 
@@ -75,6 +75,13 @@ int main() {
   // 执行完之后，删除申请的数组指针
   delete[] fn4_result_ptr;
 
+  // 左值：具有名称，非常数可修改
+  // 右值：非左值的内容，可明确复制给左值的内容
+  int fn5_val = 3;
+  // fn5_val 属于左值范畴
+  int fn5_result = fn5(fn5_val);
+  // 下面这行报错，因为方法形参需要传一个引用类型，而 10 是属于右值范畴
+  // int fn5_result = fn5(10);
+
   return 0;
 }
-```
