@@ -33,36 +33,53 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        category: '前端',
+        category: 'C++基础语法',
         items: [
           {
-            title: 'JavaScript 小技巧',
-            link: '/posts/frontend/javascript-skills'
+            title: 'basics',
+            link: '/posts/cpp-basic-syntax/basics'
           },
           {
-            title: '节流和防抖',
-            link: '/posts/frontend/throttle-and-debounce'
+            title: 'classes',
+            link: '/posts/cpp-basic-syntax/classes'
           },
           {
-            title: '关于上传',
-            link: '/posts/frontend/upload-about'
+            title: 'function',
+            link: '/posts/cpp-basic-syntax/function'
           },
-          // {
-          //   title: 'CSS 布局',
-          //   link: '/posts/frontend/css-layout'
-          // },
+          {
+            title: 'generic',
+            link: '/posts/cpp-basic-syntax/generic'
+          },
+          {
+            title: 'lambda',
+            link: '/posts/cpp-basic-syntax/lambda'
+          },
+          {
+            title: 'oop',
+            link: '/posts/cpp-basic-syntax/oop'
+          },
+          {
+            title: 'pointer',
+            link: '/posts/cpp-basic-syntax/pointer'
+          },
+          {
+            title: 'stl',
+            link: '/posts/cpp-basic-syntax/stl'
+          },
+          {
+            title: 'struct',
+            link: '/posts/cpp-basic-syntax/struct'
+          },
+          
         ]
       },
       {
-        category: '开发备忘',
+        category: '3D 相关练习和实验',
         items: [
           {
-            title: '自己搭建内网穿透服务器',
-            link: '/posts/dev-memo/build-behind-nat-firewall-local-server'
-          },
-          {
-            title: '申请和配置免费 HTTPS',
-            link: '/posts/dev-memo/tls-certificate'
+            title: '小场景#1',
+            link: '/posts/3d/scene1'
           }
         ]
       },
@@ -83,49 +100,40 @@ export default defineConfig({
           }
         ]
       },
-      // {
-      //   category: '其他',
-      //   items: [
-      //     {
-      //       title: 'Markdown 示例',
-      //       link: '/posts/other/example'
-      //     }
-      //   ]
-      // },
       {
-        category: 'C++基础语法',
+        category: '开发备忘',
         items: [
           {
-            title: 'basics',
-            link: '/posts/cpp-basic-syntax/basics'
+            title: '自己搭建内网穿透服务器',
+            link: '/posts/dev-memo/build-behind-nat-firewall-local-server'
           },
           {
-            title: 'function',
-            link: '/posts/cpp-basic-syntax/function'
-          },
-          {
-            title: 'pointer',
-            link: '/posts/cpp-basic-syntax/pointer'
-          },
-          {
-            title: 'struct',
-            link: '/posts/cpp-basic-syntax/struct'
-          },
-          {
-            title: 'classes',
-            link: '/posts/cpp-basic-syntax/classes'
-          },
+            title: '申请和配置免费 HTTPS',
+            link: '/posts/dev-memo/tls-certificate'
+          }
         ]
       },
       {
-        category: '3D 相关练习和实验',
+        category: '前端',
         items: [
           {
-            title: '小场景#1',
-            link: '/posts/3d/scene1'
-          }
+            title: 'JavaScript 小技巧',
+            link: '/posts/frontend/javascript-skills'
+          },
+          {
+            title: '节流和防抖',
+            link: '/posts/frontend/throttle-and-debounce'
+          },
+          {
+            title: '关于上传',
+            link: '/posts/frontend/upload-about'
+          },
+          // {
+          //   title: 'CSS 布局',
+          //   link: '/posts/frontend/css-layout'
+          // },
         ]
-      }
+      },
     ]
   }
 })
