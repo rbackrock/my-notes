@@ -49,6 +49,12 @@
   --header-buttons-fontsize-mobile: 0.7em;
 }
 
+/* footer */
+:root {
+  --footer-height: 5vh;
+  --footer-title-fontsize: 0.8em;
+}
+
 /* mardown 内容 */
 :root {
   --md-text-height: 36px;

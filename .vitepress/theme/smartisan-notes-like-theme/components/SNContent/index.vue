@@ -49,7 +49,7 @@ watch(route, () => {
 
       .content__container__wrapper {
         position: relative;
-        min-height: calc(100vh - var(--header-height));
+        min-height: calc(100vh - var(--header-height) - var(--footer-height));
 
         background-color: var(--content-bg);
         background-image: url(./grid.jpg);
@@ -62,7 +62,7 @@ watch(route, () => {
           justify-content: center;
           align-items: flex-start;
           width: 100%;
-          min-height: calc(100vh - var(--header-height));
+          min-height: calc(100vh - var(--header-height) - var(--footer-height));
           
           padding-top: calc(1 * var(--md-text-height));
           padding-right: var(--content-wrapper-padding-right);
@@ -106,7 +106,7 @@ watch(route, () => {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        min-height: calc(100vh - var(--header-height) * 2);
+        min-height: calc(100vh - var(--header-height) * 2 - var(--footer-height) * 1);
 
         background-color: var(--content-bg);
         background-image: url(./grid.jpg);
@@ -119,7 +119,7 @@ watch(route, () => {
 
           .content__block {
             width: 100%;
-            min-height: calc(100vh - var(--header-height) * 2);
+            min-height: calc(100vh - var(--header-height) * 2 - var(--footer-height) * 2);
             flex: 1;
             padding-top: calc(1 * var(--md-text-height-mobile));
             padding-right: var(--content-wrapper-padding-right-mobile);

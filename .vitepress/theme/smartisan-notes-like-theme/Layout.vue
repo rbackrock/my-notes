@@ -1,6 +1,7 @@
 <script setup>
 import { useData } from './composables/data'
 import SNHeader from './components/SNHeader/index.vue'
+import SNFooter from './components/SNFooter/index.vue'
 import SNSidebar from './components/SNSidebarNav/index.vue'
 import SNContent from './components/SNContent/index.vue'
 import NotFound from './components/NotFound/index.vue'
@@ -17,6 +18,7 @@ const { frontmatter, page } = useData()
         <NotFound />
       </SNContent>
     </div>
+    <SNFooter />
   </div>
   <div v-else-if="frontmatter.layout === 'blank'" class="layout__container">
     <Content />
@@ -27,6 +29,7 @@ const { frontmatter, page } = useData()
       <SNSidebar />
       <SNContent />
     </div>
+    <SNFooter />
   </div>
 </template>
 
@@ -58,7 +61,7 @@ const { frontmatter, page } = useData()
         justify-content: flex-start;
         align-items: stretch;
         width: 100%;
-        height: calc(100% - var(--header-height));
+        height: calc(100% - var(--header-height) - var(--footer-height));
         z-index: var(--body-container-zindex);
       }
     }
@@ -78,7 +81,7 @@ const { frontmatter, page } = useData()
         justify-content: flex-start;
         align-items: stretch;
         width: 100%;
-        height: calc(100% - var(--header-height) * 2);
+        height: calc(100% - var(--header-height) * 2 - var(--footer-height));
         z-index: 1;
       }
     }
