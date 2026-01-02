@@ -134,6 +134,19 @@ export default defineConfig({
           // },
         ]
       },
+      {
+        category: '《汇编语言》第四版',
+        items: [
+          {
+            title: '课后习题',
+            link: '/posts/assembly-language-4th-edition/homework'
+          },
+          {
+            title: '知识点',
+            link: '/posts/assembly-language-4th-edition/knowledge'
+          },
+        ]
+      },
     ]
   }
 })

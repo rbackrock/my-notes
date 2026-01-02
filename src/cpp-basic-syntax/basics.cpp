@@ -34,5 +34,15 @@ int main() {
   // 引用变量必须参考左值类型数据
   int& i_ref = i;
 
+  /**
+   * const 技巧，通过看 const 修饰的左边是什么
+   * 也可以通过顶层 const (top-level const) 来表示指针自身是常量，
+   * 而底层 const (low-level const) 则表示指针指向的值是常量
+   * 从右往左阅读 const 修饰的内容，依次是顶层 const 和底层 const
+   **/
+  int *const p1 = new int; // 不能重新指向其他指针
+  int const* p2 = new int; // 不能修改指针指向的值
+  int const *const p3 = new int; // 不能修改指针自身的值，也不能修改指针指向的值
+
   return 0;
 }
