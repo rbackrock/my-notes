@@ -128,25 +128,29 @@ export default defineConfig({
             title: '关于上传',
             link: '/posts/frontend/upload-about'
           },
+          {
+            title: 'Vue 备忘',
+            link: '/posts/frontend/vue-backup'
+          },
           // {
           //   title: 'CSS 布局',
           //   link: '/posts/frontend/css-layout'
           // },
         ]
       },
-      {
-        category: '《汇编语言》第四版',
-        items: [
-          {
-            title: '课后习题',
-            link: '/posts/assembly-language-4th-edition/homework'
-          },
-          {
-            title: '知识点',
-            link: '/posts/assembly-language-4th-edition/knowledge'
-          },
-        ]
-      },
+      // {
+      //   category: '《汇编语言》第四版',
+      //   items: [
+      //     {
+      //       title: '课后习题',
+      //       link: '/posts/assembly-language-4th-edition/homework'
+      //     },
+      //     {
+      //       title: '知识点',
+      //       link: '/posts/assembly-language-4th-edition/knowledge'
+      //     },
+      //   ]
+      // },
     ]
   }
 })
